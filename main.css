@@ -1,0 +1,184 @@
+body {
+    margin: 0; /* gets rid of padding */
+    background-color: #1e1e1e;
+    /*background-image: url("bkgnd.jpeg");*/
+    background-size: cover;
+    color: black;
+    transition: 0.5s;
+}
+
+
+  #pfp {
+    transition: margin-left .5s;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    top: 50vh; /* move div 50% down the page from the top */
+    transform: translateY(-70%);
+  }
+  
+
+  #nums {
+    text-align: right;
+    position: absolute;
+    color: #858585;
+    left: 10vh;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    /*transition: margin-left .5s;
+    /*padding: 20px;*/
+    padding-right: 6vw;
+    text-align: left;
+    color: #ffffff;
+    position: absolute;
+    /*top: 1vh; /* move div 50% down the page from the top */
+    left: 17vh;
+    /*transform: translateY(-70%);*/
+    z-index: 10;
+  }
+
+.blue{
+      color:#84d7f7;
+  }
+
+  .comment {
+    color: #548d47;
+  }
+
+  h1 { font-family: Consolas, monaco, monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Consolas, monaco, monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Consolas, monaco, monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+   /*
+  div {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(46, 134, 68);
+    margin: 5px 0;
+  }
+  */
+
+  /* Style the navigation bar */
+.navbar {
+    margin-left: 50px;
+    background-color: #2d2d2d;
+    overflow: auto;
+    font-family: Consolas, monaco;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Consolas, monaco;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #1e1e1e;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+  /* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 50px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #333333; /* grey */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 18px 6px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+/*second bar*/
+.exp {
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 0; 
+  top: 0; 
+  left: 0;
+  background-color: #f5f0f3; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+  transition: 0.5s;
+  }
+
+  .exp a {
+  padding: 6px 18px 6px 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #f8bdd6;
+  display: block;
+  }
+
+  .exp .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  /* margin-left: 250px; */
+  }
+
+  #main {
+      transition: margin-left .5s;
+      padding: 0px;
+  }
+
+  #nav {
+    transition: margin-left .5s;
+    padding: 0px;
+}
+
+  #nums {
+    transition: margin-left .5s;
+    padding: 0px;
+}
+
+  .exp a:hover {
+  color: #fe7fb6;
+}
+
+  /* Style page content
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar
+    padding: 0px 10px;
+  } */
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
