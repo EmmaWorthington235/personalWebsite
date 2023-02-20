@@ -48,11 +48,11 @@ body {
   color:#e27092;
 }
 
-  .comment {
-    color: #548d47;
-  }
+.comment {
+  color: #548d47;
+}
 
-  h1 { font-family: Consolas, monaco, monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Consolas, monaco, monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Consolas, monaco, monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+h1 { font-family: Consolas, monaco, monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Consolas, monaco, monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Consolas, monaco, monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
 
    /*
   div {
@@ -84,7 +84,8 @@ body {
   
   /* Navbar links on mouse-over */
   .navbar a:hover {
-    background-color: #000;
+    /* background-color: #000; */
+    color: #fe7fb6
   }
   
   /* Current/active navbar link */
@@ -132,26 +133,67 @@ body {
   height: 100%;
   width: 0;
   position: fixed; 
-  z-index: 0; 
+  /* z-index: 0;  */
   top: 0; 
   left: 0;
   background-color: #f5f0f3; 
   overflow-x: hidden; 
   padding-top: 20px;
   transition: 0.5s;
+  font-family: Consolas, monaco
   }
 
   .exp a {
+  z-index: 1;
+  margin-left: 50px;
   padding: 6px 18px 6px 10px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   color: #f8bdd6;
   display: block;
+  /* font-family: Consolas, monaco */
   }
+
+  .folder a {
+    z-index: 1;
+    margin: 0;
+    margin-left: 50px;
+    padding: 6px 18px 6px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #f8bdd6;
+    display: block;
+  }
+
+  .file a {
+      z-index: 1;
+      margin: 0;
+      margin-left: 70px;
+      padding: 6px 18px 6px 10px;
+      text-decoration: none;
+      font-size: 15px;
+      color: #f8bdd6;
+      display: block;
+  }
+
+  .exp c:hover {
+    color: #fe7fb6;
+}
+
+/* Navbar links */
+    /* .navbar a {
+      float: left;
+      text-align: center;
+      padding: 12px;
+      color: #858585;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: Consolas, monaco;
+    } */
 
   .exp .closebtn {
   position: absolute;
-  top: 0;
+  top: 7px;
   right: 0px;
   font-size: 36px;
   /* margin-left: 250px; */
